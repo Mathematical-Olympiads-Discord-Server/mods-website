@@ -72,11 +72,16 @@
         query = asciify(query).toLowerCase().trim();
         if (query.length == 0) return;
         for (var i = 0; i < students.length; i++) {
-            var matched = false;
-            for (const v of students[i].values()) {
-                matched = matched || v.indexOf(query) != -1;
+            if (students[i].month.indexOf(query) == -1 &&
+                students[i].userId.indexOf(query) == -1 &&
+                students[i].name.indexOf(query) == -1 &&
+                students[i].scores.indexOf(query) == -1 &&
+                students[i].totalScore.indexOf(query) == -1 &&
+                students[i].rank.indexOf(query) == -1 &&
+                students[i].contestName.indexOf(query) == -1 &&
+                students[i].medal.indexOf(query) == -1) {
+                continue;
             }
-            if (!matched) continue;
             var row = t_row.replace(/{{userId}}/g, students[i].userId)
                 .replace(/{{name}}/g, students[i].name)
                 .replace(/{{month}}/g, students[i].month)
