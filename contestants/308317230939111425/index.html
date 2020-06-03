@@ -38,64 +38,88 @@
     <dd>Gold medals: 0. Silver medals: 0. Bronze medals: 0. Honourable mentions: 0. Participations: 1</dd>
     </dl>
     <dl class="wide"><dt>Beginner Contests</dt></dl>
-    <table class="profile">
+    <table id="tableBEG" class="profile">
     <thead>
-        <tr><th>Contest</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>Total</th><th>Rank</th><th>Award</th></tr>
-    </thead>
-    <tbody>
         <tr>
-  <td><a href="../../timeline/2019-10/">2019-10 Beginner</a></td>
-  <td align="right">1</td>
-  <td align="right">0</td>
-  <td align="right">0</td>
-  <td align="right">0</td>
-  <td align="right">1</td>
-  <td align="right">20</td>
-  <td></td>
+  <th class="sort" data-sort="Contest">Contest</th>
+  <th class="sort" data-sort="P1">P1</th>
+  <th class="sort" data-sort="P2">P2</th>
+  <th class="sort" data-sort="P3">P3</th>
+  <th class="sort" data-sort="P4">P4</th>
+  <th class="sort" data-sort="Total">Total</th>
+  <th class="sort" data-sort="Rank">Rank</th>
+  <th data-sort="Award">Award</th>
+</tr>
+    </thead>
+    <tbody class="list">
+        <tr>
+  <td class="Contest"><a href="../../timeline/2019-10/">2019-10 Beginner</a></td>
+  <td class="P1" align="right">1</td>
+  <td class="P2" align="right">0</td>
+  <td class="P3" align="right">0</td>
+  <td class="P4" align="right">0</td>
+  <td class="Total" align="right">1</td>
+  <td class="Rank" align="right">20</td>
+  <td class="Award"></td>
 </tr>
 
     </tbody>
     </table>
     <p class="profile"></p>
     <dl class="wide"><dt>Intermediate Contests</dt></dl>
-    <table class="profile">
+    <table id="tableINT" class="profile">
     <thead>
         
     </thead>
-    <tbody>
+    <tbody class="list">
         <dd>No participation yet.</dd>
     </tbody>
     </table>
     <p class="profile"></p>
     <dl class="wide"><dt>Advanced Contests</dt></dl>
-    <table class="profile">
+    <table id="tableADV" class="profile">
     <thead>
         
     </thead>
-    <tbody>
+    <tbody class="list">
         <dd>No participation yet.</dd>
     </tbody>
     </table>
     <p class="profile"></p>
     <dl class="wide"><dt>MODSMO</dt></dl>
-    <table class="profile">
+    <table id="tableMODSMO" class="profile">
     <thead>
         
     </thead>
-    <tbody>
+    <tbody class="list">
         <dd>No participation yet.</dd>
     </tbody>
     </table>
     <p class="profile"></p>
     <dl class="wide"><dt>Special Contests</dt></dl>
-    <table class="profile">
+    <table id="tableSPECIAL" class="profile">
     <thead>
         
     </thead>
-    <tbody>
+    <tbody class="list">
         <dd>No participation yet.</dd>
     </tbody>
     </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script>
+        var options4 = {
+            valueNames: ["Contest", "P1", "P2", "P3", "P4", "Total", "Rank", "Award"]
+        };
+        var options6 = {
+            valueNames: ["Contest", "P1", "P2", "P3", "P4", "P5", "P6", "Total", "Rank", "Award"]
+        }
+        var listBEG = new List("tableBEG", options4);
+        var listINT = new List("tableINT", options4);
+        var listADV = new List("tableADV", options4);
+        var listMODSMO = new List("tableMODSMO", options6);
+        var listSPECIAL = new List("tableSPECIAL", options4);
+    </script>
+
     <p class="profile"></p>
     </dl>
 </div>
