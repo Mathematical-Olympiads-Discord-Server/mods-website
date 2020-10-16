@@ -1,22 +1,22 @@
-Intermediate,2019-05,2019-05,11–12 May 2019,9,,Intermediate,2019-05 11–12 May 2019,1
-Advanced,2019-06,2019-06,08–09 Jun 2019,10,,Advanced,2019-06 08–09 Jun 2019,2
-Beginner,2019-07,2019-07,06–07 Jul 2019,18,,Beginner,2019-07 06–07 Jul 2019,3
-Intermediate,2019-08,2019-08,10–11 Aug 2019,13,,Intermediate,2019-08 10–11 Aug 2019,4
-Advanced,2019-09,2019-09,07–08 Sep 2019,7,,Advanced,2019-09 07–08 Sep 2019,5
-Beginner,2019-10,2019-10,12–13 Oct 2019,20,,Beginner,2019-10 12–13 Oct 2019,6
-Intermediate,2019-11,2019-11,09–10 Nov 2019,11,,Intermediate,2019-11 09–10 Nov 2019,7
-MODSMO,2019-12,2019-12,14–15 Dec 2019,11,,MODSMO,2019-12 14–15 Dec 2019,8
-Beginner,2020-01,2020-01,18–19 Jan 2020,19,,Beginner,2020-01 18–19 Jan 2020,9
-Intermediate,2020-02,2020-02,08–09 Feb 2020,15,,Intermediate,2020-02 08–09 Feb 2020,10
-Advanced,2020-03,2020-03,14–15 Mar 2020,14,,Advanced,2020-03 14–15 Mar 2020,11
-Beginner,2020-04,2020-04,11–12 Apr 2020,35,,Beginner,2020-04 11–12 Apr 2020,12
-Intermediate,2020-05,2020-05,09–10 May 2020,22,,Intermediate,2020-05 09–10 May 2020,13
-GQMO Easy,Global Quarantine Mathematical Olympiad Easy,2020,GQMO-Easy,09–10 May 2020,2020-05 09–10 May 2020e,254,Organized by Swiss Maths Olympiad,14
-GQMO Hard,Global Quarantine Mathematical Olympiad Hard,2020,GQMO-Hard,16–17 May 2020,2020-05 16,313,Organized by Swiss Maths Olympiad,15
-Advanced,2020-06,2020-06,13–14 Jun 2020,20,,Advanced,2020-06 13–14 Jun 2020,16
-Beginner,2020-07,2020-07,11–12 Jul 2020,28,,Beginner,2020-07 11–12 Jul 2020,17
-Intermediate,2020-08,2020-08,08–09 Aug 2020,29,,Intermediate,2020-08 08–09 Aug 2020,18
-Advanced,2020-09,2020-09,12–13 Sep 2020,,,Advanced,2020-09 12–13 Sep 2020,19
-Beginner,2020-10,2020-10,10–11 Oct 2020,,,Beginner,2020-10 10–11 Oct 2020,20
-Intermediate,2020-11,2020-11,08–09 Nov 2020,,,Intermediate,2020-11 08–09 Nov 2020,21
-MODSMO,2020-12,2020-12,,,,MODSMO,2020-12 ,22
+Intermediate,2019-05,2019-05,11–12 May 2019,9,True,,Intermediate,2019-05 11–12 May 2019,1
+Advanced,2019-06,2019-06,08–09 Jun 2019,10,True,,Advanced,2019-06 08–09 Jun 2019,2
+Beginner,2019-07,2019-07,06–07 Jul 2019,18,True,,Beginner,2019-07 06–07 Jul 2019,3
+Intermediate,2019-08,2019-08,10–11 Aug 2019,13,True,,Intermediate,2019-08 10–11 Aug 2019,4
+Advanced,2019-09,2019-09,07–08 Sep 2019,7,True,,Advanced,2019-09 07–08 Sep 2019,5
+Beginner,2019-10,2019-10,12–13 Oct 2019,20,True,,Beginner,2019-10 12–13 Oct 2019,6
+Intermediate,2019-11,2019-11,09–10 Nov 2019,11,True,,Intermediate,2019-11 09–10 Nov 2019,7
+MODSMO,2019-12,2019-12,14–15 Dec 2019,11,True,,MODSMO,2019-12 14–15 Dec 2019,8
+Beginner,2020-01,2020-01,18–19 Jan 2020,19,True,,Beginner,2020-01 18–19 Jan 2020,9
+Intermediate,2020-02,2020-02,08–09 Feb 2020,15,True,,Intermediate,2020-02 08–09 Feb 2020,10
+Advanced,2020-03,2020-03,14–15 Mar 2020,14,True,,Advanced,2020-03 14–15 Mar 2020,11
+Beginner,2020-04,2020-04,11–12 Apr 2020,35,True,,Beginner,2020-04 11–12 Apr 2020,12
+Intermediate,2020-05,2020-05,09–10 May 2020,22,True,,Intermediate,2020-05 09–10 May 2020,13
+GQMO Easy,Global Quarantine Mathematical Olympiad Easy,2020,GQMO-Easy,09–10 May 2020,2020-05 09–10 May 2020e,False,254,Organized by Swiss Maths Olympiad,14
+GQMO Hard,Global Quarantine Mathematical Olympiad Hard,2020,GQMO-Hard,16–17 May 2020,2020-05 16,False,313,Organized by Swiss Maths Olympiad,15
+Advanced,2020-06,2020-06,13–14 Jun 2020,20,True,,Advanced,2020-06 13–14 Jun 2020,16
+Beginner,2020-07,2020-07,11–12 Jul 2020,28,True,,Beginner,2020-07 11–12 Jul 2020,17
+Intermediate,2020-08,2020-08,08–09 Aug 2020,29,True,,Intermediate,2020-08 08–09 Aug 2020,18
+Advanced,2020-09,2020-09,12–13 Sep 2020,,True,,Advanced,2020-09 12–13 Sep 2020,19
+Beginner,2020-10,2020-10,10–11 Oct 2020,,True,,Beginner,2020-10 10–11 Oct 2020,20
+Intermediate,2020-11,2020-11,08–09 Nov 2020,,True,,Intermediate,2020-11 08–09 Nov 2020,21
+MODSMO,2020-12,2020-12,,,True,,MODSMO,2020-12 ,22
