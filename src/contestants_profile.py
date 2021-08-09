@@ -22,14 +22,19 @@ def run(user_id):
     beg, inter, adv, modsmo, special = [""] * 5
     beg_anon, inter_anon, adv_anon, modsmo_anon, special_anon = [False] * 5
     for row in contestant_grouped[user_id]:
-        rowhtml = templates.get("contestants/profile_row_" + str(len(row["scores"]))) \
+        if row["is_anonymous"]:
+            continue
+
+        rowhtml = templates.get("contestants/profile_row_" + str(max(4, len(row["scores"])))) \
                     .replace("__MONTH__", row["month"]) \
                     .replace("__CONTEST_NAME__", row["contest_name"]) \
                     .replace("__TOTAL_SCORE__", "" if row["is_anonymous"] else str(row["total_score"])) \
                     .replace("__RANK__", "" if row["is_anonymous"] else str(row["rank"]))
 
         for i, x in enumerate(row["scores"]):
-            rowhtml = rowhtml.replace(f"__SCORE_{i+1}__", "" if row["is_anonymous"] else str(x))
+            rowhtml = rowhtml.replace(f"__SCORE_{i+1}__", str(x))
+        for i in range(len(row["scores"]), 8):
+            rowhtml = rowhtml.replace(f"__SCORE_{i+1}__", "–")
 
         if not row["is_anonymous"]:
             if row["medal"] == "G":
@@ -44,13 +49,13 @@ def run(user_id):
                 rowhtml = rowhtml.replace("__MEDAL__", "")
         else:
             rowhtml = rowhtml.replace("__MEDAL__", "")
-        if row["contest_name"] == "Beginner":
+        if "Beginner" in row["contest_name"]:
             beg += rowhtml
             beg_anon = beg_anon or row["is_anonymous"]
-        elif row["contest_name"] == "Intermediate":
+        elif "Intermediate" in row["contest_name"]:
             inter += rowhtml
             inter_anon = inter_anon or row["is_anonymous"]
-        elif row["contest_name"] == "Advanced":
+        elif "Advanced" in row["contest_name"]:
             adv += rowhtml
             adv_anon = adv_anon or row["is_anonymous"]
         elif row["contest_name"] == "MODSMO":
