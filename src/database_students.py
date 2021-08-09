@@ -25,7 +25,7 @@ def is_valid(row, index):
     res = res and re.fullmatch(r".+#\d\d\d\d", row[scores_ix[index][0]-1])
 
     for i in scores_ix[index]:
-        res = res and re.fullmatch(r"\d+", row[i])
+        res = res and re.fullmatch(r"\d*", row[i])
 
     res = res and re.fullmatch(r"\d+", row[scores_ix[index][-1]+1])
     res = res and re.fullmatch(r"\d+", row[scores_ix[index][-1]+2])
@@ -43,7 +43,7 @@ for index in range(2):
             "id": row[0],
             "user-id": row[1],
             "name": row[scores_ix[index][0]-1],
-            "scores": [row[i] for i in scores_ix[index]],
+            "scores": [row[i] for i in scores_ix[index] if row[i]],
             "total_score": row[scores_ix[index][-1]+1],
             "rank": row[scores_ix[index][-1]+2],
             "contest_name": id_indexed[row[0]]["name"],
@@ -76,7 +76,7 @@ for id, entries in id_grouped.items():
     if not id.startswith("2019-05") and id_indexed[id]["p_student"] and \
        int(id_indexed[id]["p_student"]) != len(entries):
         raise Exception(f"Number of participants in {id} does not match")
-    entries.sort(key=lambda entry: entry["rank"])
+    entries.sort(key=lambda entry: int(entry["rank"]))
 
 
 for diff in ("Easy", "Hard"):
