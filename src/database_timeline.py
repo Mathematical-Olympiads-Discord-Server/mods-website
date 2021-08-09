@@ -19,7 +19,9 @@ def is_valid(row):
 
 def parse_contest_name(raw):
     abbr = {"beg": "Beginner", "int": "Intermediate",
-            "adv": "Advanced", "modsmo": "MODSMO"}
+            "adv": "Advanced", "modsmo": "MODSMO",
+            "modsmo-beg": "MODSMO Beginner", "modsmo-int": "MODSMO Intermediate",
+            "modsmo-adv": "MODSMO Advanced"}
     return abbr[raw] if raw in abbr else raw.capitalize()
 
 
