@@ -98,32 +98,13 @@
     <dl class="wide"><dt>Advanced Contests</dt></dl>
     <table id="tableADV" class="profile">
     <thead>
-        <tr>
-  <th class="sort" data-sort="Contest">Contest</th>
-  <th class="sort" data-sort="P1">P1</th>
-  <th class="sort" data-sort="P2">P2</th>
-  <th class="sort" data-sort="P3">P3</th>
-  <th class="sort" data-sort="P4">P4</th>
-  <th class="sort" data-sort="Total">Total</th>
-  <th class="sort" data-sort="Rank">Rank</th>
-  <th data-sort="Award">Award</th>
-</tr>
+        
     </thead>
     <tbody class="list">
-        <tr>
-  <td class="Contest"><a href="../../timeline/2020-09/">2020-09 Advanced</a></td>
-  <td class="P1" align="right"></td>
-  <td class="P2" align="right"></td>
-  <td class="P3" align="right"></td>
-  <td class="P4" align="right"></td>
-  <td class="Total" align="right"></td>
-  <td class="Rank" align="right"></td>
-  <td class="Award"></td>
-</tr>
-
+        <dd>No participation yet.</dd>
     </tbody>
     </table>
-    <p class="profile">Results of anonymous participations are hidden.</p>
+    <p class="profile"></p>
     <dl class="wide"><dt>MODSMO</dt></dl>
     <table id="tableMODSMO" class="profile">
     <thead>
@@ -145,9 +126,6 @@
     </table>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script>
-        var options3 = {
-            valueNames: ["Contest", "P1", "P2", "P3", "Total", "Rank", "Award"]
-        };
         var options4 = {
             valueNames: ["Contest", "P1", "P2", "P3", "P4", "Total", "Rank", "Award"]
         };
@@ -158,7 +136,7 @@
         var listINT = new List("tableINT", options4);
         var listADV = new List("tableADV", options4);
         var listMODSMO = new List("tableMODSMO", options6);
-        var listSPECIAL = new List("tableSPECIAL", options3);
+        var listSPECIAL = new List("tableSPECIAL", options4);
     </script>
 
     <p class="profile"></p>
