@@ -91,7 +91,7 @@ def run(id):
                     .replace("__NAME__", "σ") \
                     .replace("__STYLE__", "sigma")
         for i in range(num_problems):
-            total = sum(int(x) for x in count[i] if x.isdigit())
+            total = sum(count[i].values())
             total_score = sum(score * count[i][str(score)] for score in range(8))
             mean = total_score / total
             means = means.replace(f"__P{i+1}__", "%.3f" % mean)
