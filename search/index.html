@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<link href="../img/fav-logo.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="../css/design.css" rel="stylesheet" type="text/css" />
+<link href="../css/print.css" rel="stylesheet" type="text/css" media="print" />
+<title>Search — Mathematical Olympiads Discord Server</title>
+<script src="asciify.js"></script>
+<script src="search.js"></script>
+</head>
+<body>
+<div id="header">
+    <div id="h1">
+        <h1><a href="../">Mathematical Olympiads Discord Server</a></h1>
+    </div>
+    <div id="sub">
+        <span class="previous"><a href="../timeline/2021-07-modsmo-int">2021-07 MODSMO Intermediate</a></span>
+        <span class="img"><a href="../"><img src="../img/logo.png" alt="MODS" width="30" height="22"/></a></span>
+        <span class="next"><a href="../timeline/2021-07-modsmo-adv">2021-07 MODSMO Advanced</a></span>
+    </div>
+</div>
+<div id="sidebar">
+    <ul>
+        <li><a href="../timeline/" class="">Timeline</a></li>
+        <li><a href="../contestants/" class="">Contestants</a></li>
+        <li><a href="../search/" class="highlight">Search</a></li>
+        <li><a target="_blank" href="https://github.com/Mathematical-Olympiads-Discord-Server/files/tree/master/Contests">Problems</a></li>
+        <li><a target="_blank" href="http://bit.ly/MODS_discord_guide">MODS Discord Guide</a></li>
+    </ul>
+</div>
+
+<div id="main">
+    <h2>Search</h2>
+    <p>
+    <input type="text" maxlength="30" class="inptText" size="24" id="search_query" onkeydown="if(event.keyCode == 13) { mods_search(); }" />
+    <input type="submit" value="Search" class="btnSubmit" onclick="mods_search()" />
+    <span>(Search the MODS database for a particular contestant)</span>
+    </p>
+    <table>
+        <thead><tr>
+            <th>UserID</th>
+            <th>Contestant</th>
+            <th>Contest</th>
+            <th>Total</th>
+            <th>Rank</th>
+            <th>Award</th>
+        </tr></thead>
+    <tbody id="search_results">
+    </tbody>
+    </table>
+</div>
+<div id="footer">
+<a href="https://discord.gg/q93Wrgn" target="_blank">Join our server!!</a>
+&bull;
+<a href="http://bit.ly/MODS_patreon" target="_blank">Donate</a>
+&bull;
+<b>Email:</b>
+<a href="mailto:mo.discord.server@gmail.com">mo.discord.server@gmail.com</a>
+</div>
+
+<table>
+
+<tr style="display: none;" id="t_row">
+    <td><a href="../contestants/{{userId}}/">{{userId}}</a></td>
+    <td><a href="../contestants/{{userId}}/">{{name}}</a></td>
+    <td><a href="../timeline/{{month}}/">{{contest}}</a></td>
+    <td align="right">{{totalScore}}</td>
+    <td align="right">{{rank}}</td>
+    <td>{{medal}}</td>
+</tr>
+</table>
+<div style="display: none;" id="t_gold"><img src="../img/gold.png" width="9" height="9"> Gold Medal</div>
+<div style="display: none;" id="t_silver"><img src="../img/silver.png" width="9" height="9"> Silver Medal</div>
+<div style="display: none;" id="t_bronze"><img src="../img/bronze.png" width="9" height="9"> Bronze Medal</div>
+<div style="display: none;" id="t_honourable"><img src="../img/honourable.png" width="9" height="9"> Honourable Mention</div>
+</body>
+</html>
+
