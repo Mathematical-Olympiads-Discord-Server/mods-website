@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import index
+import privacy_policy
 import e404
 import timeline
 import contestants
@@ -9,6 +10,7 @@ import static_files
 def run():
     print("Creating whole project")
     index.run()
+    privacy_policy.run()
     e404.run()
     timeline.run()
     contestants.run()
